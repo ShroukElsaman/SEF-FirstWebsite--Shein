@@ -1,0 +1,891 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 3000px;
+  /* background-color: #fff; */
+  background-color: #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Start Header Section */
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.header .logo {
+  width: 10%;
+  float: left;
+}
+.nav {
+  width: 90%;
+  float: right;
+  text-align: right;
+  /* background-color: grey; */
+  /* margin-right: 50px; */
+}
+.header .container .header-content .nav li {
+  list-style: none;
+  display: inline-block;
+}
+.header .container .header-content .nav li a {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+.header .container .header-content .nav li a:hover {
+  color: black;
+}
+.header .container .header-content .nav li a::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  display: block;
+  background-color: black;
+  margin-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .container .header-content .nav li a:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  margin: 2px 0px 5px;
+}
+.clear {
+  clear: both;
+}
+/* End Header Section  */
+/* ---------------------------------------------------------------  */
+/* Start Hero image Section  */
+.home {
+  height: 100vh;
+  background-image: url(../images/Long\ Sleeve\ A-Line\ Dress\ by\ Cinderella\ Divine.jpeg);
+  position: relative;
+}
+.home-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.home-content {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 80px;
+}
+.home-title1 {
+  color: #fff;
+  font-size: 65px;
+}
+.home-p1 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin: 15px 0px;
+}
+.home-content .btn {
+  width: 150px;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  /* background-color: rgba(0, 0, 0, .4); */
+  opacity: 0.4;
+  margin-top: 35px;
+}
+.gr:hover {
+  opacity: 0.6;
+}
+.btn-learn {
+  /* background-color: blue; */
+  /* color: white; */
+  margin-left: 10px;
+}
+/* End Hero image Section  */
+/* ---------------------------------------------------------------  */
+/* Start About Section  */
+.about-home {
+  padding: 120px 0;
+  height: 100vh;
+  /* background-color: #dad0c0; */
+  background-color: #e8e8e8;
+}
+.section-header {
+  text-align: center;
+}
+.section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 9px;
+  margin-top: 6px;
+}
+.section-header .line {
+  display: block;
+  width: 62px;
+  height: 4px;
+  background-color: #5f4839;
+  margin: 0 auto 70px auto;
+}
+.about-item {
+  float: left;
+  border: 2px solid #888;
+  width: 30%;
+  text-align: center;
+  padding: 30px 15px;
+  position: relative;
+  height: 350px;
+  border-radius: 10px;
+}
+.woman {
+  background-image: url(../images/Get\ the\ We\ Heart\ It\ app!.jpeg);
+  background-size: cover;
+}
+.kids {
+  background-image: url(../images/kids-download.jpeg);
+  background-size: cover;
+  margin: 0px 5%;
+}
+.man {
+  background-image: url(../images/man-download.jpeg);
+  background-size: cover;
+}
+.about-item i {
+  color: #5f4839;
+  margin-top: 120px;
+  font-size: 48px;
+  opacity: 0.7;
+}
+.about-item-title {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.about-item-link {
+  text-decoration: none;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #5f4839;
+  margin-left: 70px;
+  border-radius: 10px;
+  width: 130px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.about-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+}
+.about-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+/* End About Section  */
+/* ---------------------------------------------------------------  */
+/* Start feature Section  */
+.feature-home {
+  padding: 120px 0;
+  /* height: 100vh; */
+  background-color: #e8e8e8;
+}
+.feature-content {
+  overflow: hidden;
+}
+.feature-item {
+  width: 30%;
+  float: left;
+  position: relative;
+  padding: 15px;
+  margin-top: 50px;
+}
+.center {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.feature-item img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  /* margin-top: 50px; */
+  /* margin-left: auto; */
+}
+.feature-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+}
+.feature-overlay .feature-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.feature-overlay .feature-info-title {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-weight: bold;
+}
+.layer-content-text {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.feature-overlay a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: peru;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.feature-overlay a i {
+  line-height: 40px;
+  color: white;
+}
+
+.feature-item:hover .feature-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+}
+.feature-item:hover .feature-info-title {
+  opacity: 1;
+  visibility: visible;
+  transition: top 1s, opacity 0.5s;
+}
+.feature-item:hover .layer-content-text {
+  opacity: 1;
+  visibility: visible;
+  transition: top 1s, opacity 0.5s;
+  transition-delay: 0.4s;
+}
+.feature-item:hover .feature-overlay a {
+  opacity: 1;
+  visibility: visible;
+  transition: top 1s, opacity 0.5s;
+  transition-delay: 0.6s;
+}
+/* End feature Section  */
+/* ---------------------------------------------------------------  */
+/* Start offer Section  */
+.offer-section {
+  padding: 120px 0px;
+  /* background-color: #e8e8e8; */
+}
+.offer-section .section-header {
+  text-align: center;
+  margin-top: 0;
+}
+.offer-content {
+  overflow: hidden;
+}
+.offer-item {
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+  border: 1px solid #a8a8a8;
+  padding: 30px 15px 30px 70px;
+  position: relative;
+  height: 400px;
+}
+.tops {
+  background-image: url(../images/tops-Screenshot\ \(59\).png);
+  background-size: cover;
+}
+.bottoms {
+  background-image: url(../images/bottoms-Screenshot\ \(61\).png);
+  background-size: cover;
+}
+.sports {
+  background-image: url(../images/sports-.png);
+  background-size: cover;
+}
+.beachwear {
+  background-image: url(../images/beachwer-Screenshot\ \(62\).png);
+  background-size: cover;
+}
+.bags {
+  background-image: url(../images/bags-Screenshot\ \(66\).png);
+  background-size: cover;
+}
+.accessories {
+  background-image: url(../images/accessories-Screenshot\ \(67\).png);
+  background-size: cover;
+}
+.centero {
+  margin: 0px 5%;
+}
+.offer-item i {
+  position: absolute;
+  left: 250px;
+  top: 350px;
+  color: #fff;
+  font-size: 40px;
+  opacity: 0.7;
+}
+.offer-item-title {
+  text-transform: capitalize;
+  margin-top: 150px;
+  margin-left: -25px;
+  transition: 1s;
+  color: black;
+  font-size: 35px;
+  opacity: 0.4;
+  text-align: center;
+  display: block;
+}
+.offer-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+}
+.offer-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+/* End offer Section - */
+/* ---------------------------------------------------------------  */
+/* Start service Section  */
+.service-home {
+  background-color: #e8e8e8;
+  /* background-color: #f9f9f9; */
+  /* margin-top: 200px; */
+}
+.containero {
+  width: 80%;
+  margin: auto;
+}
+.lino {
+  display: block;
+  width: 62px;
+  height: 4px;
+  background-color: #5f4839;
+  margin: 0 0 70px 0;
+}
+.service-item {
+  width: 50%;
+  float: left;
+  margin-top: 100px;
+}
+.service-item .section-header {
+  text-align: left;
+}
+.service-item-text {
+  padding-right: 20px;
+  color: #999;
+  line-height: 1.4;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.service-list {
+  list-style: none;
+}
+.service-list li {
+  margin-bottom: 13px;
+  color: #999;
+}
+.service-list li i {
+  border: 1px solid #5f4839;
+  color: #5f4839;
+  padding: 3px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.service-item-img img {
+  width: 380px;
+  height: 470px;
+  margin-left: 160px;
+}
+.service-bullets {
+  list-style: none;
+  text-align: center;
+  margin-left: 160px;
+}
+.service-bullets li {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #a8a8a8;
+  margin: 10px 5px;
+  border-radius: 50%;
+}
+.service-bullets .active {
+  background-color: #5f4839;
+}
+.service-bullets .notactive:hover {
+  background-color: #5f4839;
+}
+.clear {
+  clear: both;
+}
+/* End service Section  */
+/* <!-- ---------------------------------------------------------------  */
+/* Start numbers Section  */
+.numbers-home {
+  margin-top: 200px;
+  position: relative;
+  background-image: url(../images/covro-Must\ have\ sweet\ autumn\ perfume-Sì\ Giorgio\ Armani\,\ sì\ intense_\ Best\ scents\,\ long\ lasting\ fragrance.jpeg);
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.numbers-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.numbers-items {
+  overflow: hidden;
+  padding-top: 130px;
+}
+.number-item {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.number-item i {
+  color: white;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+.number-item-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.7;
+}
+.number-item-text {
+  color: #fff;
+  opacity: 0.7;
+}
+/* End numbers Section  */
+/* ---------------------------------------------------------------  */
+/* Start pricing Section */
+.Pricing-home {
+  background-color: #e8e8e8;
+  padding: 120px 0;
+}
+.Pricing-content {
+  overflow: hidden;
+}
+.Pricing-item {
+  float: left;
+  width: 30%;
+  padding: 30px 15px;
+  border: 1px solid #a8a8a8;
+  text-align: center;
+  position: relative;
+}
+.div2 {
+  margin: 0px 5%;
+}
+.pricing-item-title {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #999;
+}
+.pricing-item-permonth {
+  width: 100px;
+  height: 100px;
+  padding: 12px 0;
+  margin: 20px auto;
+  border: 2px solid #5f4839;
+  border-radius: 50%;
+}
+.doller {
+  font-size: 50px;
+}
+.month {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.pricing-list {
+  list-style: none;
+}
+.pricing-item-btn {
+  border: 2px solid #5f4839;
+  margin: auto;
+  padding: 4px;
+  background-color: none;
+  display: block;
+  width: 120px;
+  margin-top: 15px;
+  /* transition: color 0.5s; */
+}
+.Pricing-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #0b0c0c;
+  opacity: 0;
+}
+.Pricing-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.Pricing-item:hover .pricing-item-title {
+  color: #5f4839;
+  transition: 0.5s;
+}
+.Pricing-item:hover .pricing-item-permonth {
+  color: #5f4839;
+  transition: 0.5s;
+}
+/* End pricing Section */
+/* ---------------------------------------------------------------  */
+/* Start coverd Section  */
+.coverd-section {
+  position: relative;
+  background-image: url(../images/Aesthetic\ Notion\ Covers\ For\ You.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 350px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.coverd-section-content {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.coverd-section-item {
+  float: left;
+  width: 50%;
+  color: #fff;
+  padding-right: 20px;
+  padding-top: 55px;
+  margin-bottom: 110px;
+}
+.coverd-section-toplayer {
+  padding: 90px 20px 10px 150px;
+  position: relative;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.coverd-section-toplayer img {
+  position: absolute;
+  top: 82px;
+  left: 65px;
+  border-radius: 50%;
+}
+.coverd-section-toplayer span {
+  color: black;
+  font-weight: bold;
+}
+.coverd-section-text {
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-left: 76px;
+  font-size: 14px;
+}
+/* End coverd Section  */
+/* ---------------------------------------------------------------  */
+/* Start team Section  */
+.team-home {
+  padding: 120px 0;
+}
+.team-container {
+  width: 80%;
+  /* background-color: grey; */
+  margin: auto;
+}
+.team-item {
+  float: left;
+  background-color: #eee;
+  width: 30%;
+  text-align: center;
+  padding: 20px 15px;
+  position: relative;
+}
+.div2 {
+  margin: 0px 5%;
+}
+.team-img {
+  width: 90%;
+  /* background-color: peru; */
+  margin: auto;
+  position: relative;
+}
+.team-img img {
+  width: 100%;
+  height: 300px;
+}
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+}
+.team-item:hover .team-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.team-overlay a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(192, 144, 97);
+  color: white;
+  margin-left: auto;
+}
+.team-overlay a i {
+  line-height: 45px;
+}
+.team-info-title {
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
+.team-info-p {
+  color: rgb(88, 79, 79);
+}
+/* ------------------------------------------------------------------------- */
+
+.team-item::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 25%;
+
+  top: 0;
+  left: 0;
+
+  background-color: black;
+  opacity: 0;
+}
+
+.team-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: 1s;
+}
+/* End team Section  */
+/* ---------------------------------------------------------------  */
+/* Start recent Section  */
+.recent-home {
+  padding: 120px 0;
+  margin-top: 200px;
+}
+.recent-content {
+  overflow: hidden;
+  background-color: #f8f8f8;
+  margin-top: 100px;
+}
+.section-header {
+  text-align: center;
+  margin-top: 100px;
+}
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 9px;
+  margin-top: 6px;
+}
+.recent-item {
+  float: left;
+  width: 30%;
+  background-color: #fff;
+  position: relative;
+}
+.recent-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: palevioletred;
+  opacity: 0;
+}
+.recent-item:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 1s;
+}
+.recent-home .line {
+  background-color: palevioletred;
+}
+.div2 {
+  margin: 0px 5%;
+}
+.recent-item-img {
+  width: 90%;
+  margin-left: 23px;
+  /* background-color: grey; */
+}
+.recent-item-img img {
+  width: 100%;
+  height: 250px;
+}
+.recent-info {
+  padding: 20px;
+}
+.recent-list {
+  list-style: none;
+  margin: 10px 0;
+}
+.recent-list li {
+  display: inline-block;
+  font-size: 13px;
+  margin: 6px 0cm;
+  font-weight: bold;
+}
+.recent-list li i {
+  color: palevioletred;
+  margin-left: 16px;
+}
+.recent-title {
+  font-weight: bold;
+  margin: 20px 0;
+  margin-bottom: 25px;
+}
+.recent-desc {
+  color: #999;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.recent-link {
+  color: palevioletred;
+  font-weight: bold;
+}
+/* End recent Section */
+/* ---------------------------------------------------------------  */
+/* Start footer Section  */
+.footer {
+  background-color: #ddd;
+  /* background-image: url(../images/covro-Must\ have\ sweet\ autumn\ perfume-Sì\ Giorgio\ Armani\,\ sì\ intense_\ Best\ scents\,\ long\ lasting\ fragrance.jpeg); */
+  text-align: center;
+  height: 300px;
+  padding: 60px 0;
+}
+.footer img {
+  width: 60px;
+  height: 55px;
+  border-radius: 10px;
+  /* opacity: .5; */
+}
+.footer-links {
+  list-style: none;
+  margin: 20px 0;
+}
+.footer-links li {
+  display: inline-block;
+  background-color: #f4f1ea;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+.footer-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: BLACK;
+  line-height: 50%;
+  padding-top: 15px;
+  padding-right: 15px;
+  font-size: 23px;
+  margin: 0 8px;
+}
+.footer-links li a:hover {
+  color: #5f4839;
+}
+.footer-links li a i {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+}
+.footer-links li:hover {
+  transition: 0.3s;
+  background-color: #a0866a;
+}
+.footer p {
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* End footer Section  */
+/* ---------------------------------------------------------------  */
